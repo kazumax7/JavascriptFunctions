@@ -1,0 +1,27 @@
+function a(t){
+    let r = [];
+
+    let b = 2;
+    let l;
+
+    while(t > 0){
+        l = Math.log(t) / Math.log(b);
+        let c = Math.floor(l);
+        t -= b**c;
+
+        r.push(c);
+    }
+
+    return r;
+}
+
+function aa(b){
+    let c = [];
+    let m = b[0];
+
+    for(let k = 0; k <= m; k++){
+        c[m - k] = b.indexOf(k) == -1 ? 0 : 1;
+    }
+
+    return c.join("");
+}
